@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaya Wedding Dekorasi - dekorasi pernikahan, paket wedding, dan perlengkapan acara di Sukabumi.">
+  <title>Gaya Wedding Dekorasi</title>
+  <style>
+    :root{
+      --gold:#c9a227;
+      --gold2:#f0d77a;
+      --ink:#201b17;
+      --muted:#6f665d;
+      --cream:#fbf8f1;
+      --white:#fff;
+      --line:#eadfca;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(251,248,241,.94);
+      backdrop-filter:blur(12px);border-bottom:1px solid var(--line)
+    }
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Georgia,serif;font-size:25px;font-style:italic;font-weight:700;color:var(--gold);white-space:nowrap}
+    .navlinks{display:flex;gap:22px;font-size:14px;font-weight:700}
+    .navlinks a:hover{color:var(--gold)}
+    .hero{padding:90px 0 70px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(201,162,39,.08);right:-220px;top:-180px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px}
+    .eyebrow{letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:800;font-size:13px}
+    h1{font-family:Georgia,serif;font-size:clamp(44px,6vw,76px);line-height:1.02;margin:15px 0 18px}
+    h1 span{color:var(--gold);font-style:italic}
+    .lead{font-size:18px;color:var(--muted);max-width:620px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{padding:13px 20px;border-radius:999px;font-weight:800;border:1px solid var(--gold);display:inline-flex;align-items:center;gap:8px}
+    .btn.primary{background:var(--gold);color:#fff}
+    .btn.secondary{background:#fff}
+    .hero-card{background:#fff;border:1px solid var(--line);padding:12px;border-radius:28px;box-shadow:0 20px 60px rgba(55,40,15,.12)}
+    .hero-card img{width:100%;height:460px;object-fit:cover;border-radius:20px;display:block}
+    section{padding:75px 0}
+    .section-head{text-align:center;margin-bottom:38px}
+    .section-head .eyebrow{font-size:12px}
+    h2{font-family:Georgia,serif;font-size:42px;margin:8px 0}
+    .section-head p{color:var(--muted);margin:0 auto;max-width:680px}
+    .packages{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .package{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(55,40,15,.06)}
+    .package.featured{border:2px solid var(--gold);transform:translateY(-4px)}
+    .tag{display:inline-block;background:#f6edd1;color:#8e6c00;padding:6px 11px;border-radius:999px;font-size:12px;font-weight:800}
+    .price{font-family:Georgia,serif;font-size:34px;color:var(--gold);margin:15px 0 18px;font-weight:800}
+    .package ul{padding-left:20px;margin:0;color:#514940}
+    .package li{margin:8px 0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .gallery a{display:block;overflow:hidden;border-radius:20px;background:#fff;border:1px solid var(--line)}
+    .gallery img{width:100%;height:280px;object-fit:cover;display:block;transition:.35s}
+    .gallery a:hover img{transform:scale(1.04)}
+    .contact{background:#211d18;color:#fff}
+    .contact .section-head p{color:#d8d0c4}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{background:#2b251f;border:1px solid #4a4035;border-radius:22px;padding:25px}
+    .contact-card h3{margin-top:0;color:var(--gold2)}
+    .contact-card p{margin:8px 0;color:#e9e2d7}
+    .socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    footer{text-align:center;background:#181410;color:#bfb5a7;padding:22px;font-size:13px}
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero{padding-top:55px}
+      .hero-grid,.contact-grid{grid-template-columns:1fr}
+      .packages{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .hero-card img{height:360px}
+    }
+    @media(max-width:520px){
+      h2{font-size:34px}
+      .gallery{grid-template-columns:1fr}
+      .gallery img{height:300px}
+      .brand{font-size:21px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">Gaya Wedding Dekorasi</div>
+      <div class="navlinks">
+        <a href="#paket">Paket</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Wedding Decoration • Sukabumi</div>
+        <h1>Wujudkan hari istimewa dengan <span>dekorasi berkelas.</span></h1>
+        <p class="lead">Gaya Wedding Dekorasi menghadirkan dekorasi pernikahan dan perlengkapan acara dengan pilihan paket mulai Rp7 juta sampai Paket Platinum Rp20 juta.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/6285723581783?text=Halo%20Gaya%20Wedding%20Dekorasi,%20saya%20ingin%20konsultasi%20paket%20wedding." target="_blank">WhatsApp Sekarang</a>
+          <a class="btn secondary" href="#paket">Lihat Paket</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="galeri-1.jpg" alt="Dekorasi pernikahan Gaya Wedding Dekorasi">
+      </div>
+    </div>
+  </section>
+
+  <section id="paket">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Pilihan Paket</div>
+        <h2>Paket Wedding Dekorasi</h2>
+        <p>Detail paket disusun berdasarkan daftar yang terdapat pada materi harga yang Anda kirim.</p>
+      </div>
+
+      <div class="packages">
+        <article class="package">
+          <span class="tag">PAKET 01</span>
+          <div class="price">Rp7.000.000</div>
+          <ul>
+            <li>Tenda ukuran 4x6 + sayap</li>
+            <li>Tenda pelangi ukuran 6x8 + pelangi</li>
+            <li>Kursi 50 + chair cover</li>
+            <li>Alat prasmanan 7 set</li>
+            <li>Piring, sendok, garpu</li>
+            <li>Undangan 200 lembar</li>
+            <li>Karpet jalan</li>
+            <li>Stand flowers</li>
+            <li>Gazebo</li>
+          </ul>
+        </article>
+
+        <article class="package">
+          <span class="tag">PAKET 02</span>
+          <div class="price">Rp10.000.000</div>
+          <ul>
+            <li>Tenda ukuran 4x6 + sayap</li>
+            <li>Tenda pelangi ukuran 6x8 + pelangi</li>
+            <li>Kursi 50 + chair cover</li>
+            <li>Alat prasmanan 7 set</li>
+            <li>Piring, sendok, garpu</li>
+            <li>Undangan 200 lembar</li>
+            <li>Karpet jalan</li>
+            <li>Stand flowers</li>
+            <li>Gazebo</li>
+            <li>2 meja tamu</li>
+            <li>Sound system</li>
+            <li>Baju ibu/bapak hajat</li>
+            <li>Baju ibu/bapa besan</li>
+            <li>4 baju pagar ayu</li>
+            <li>2 baju prasman</li>
+          </ul>
+        </article>
+
+        <article class="package">
+          <span class="tag">PAKET 03</span>
+          <div class="price">Rp12.000.000</div>
+          <ul>
+            <li><strong>Dekorasi & perlengkapan acara:</strong> tenda 4x6 + sayap, tenda pelangi 6x8 + pelangi, kursi 50 + sarung kursi, karpet jalan, penyangga bunga, gazebo, 2 meja tamu, 4 meja akad, gerbang pernikahan, foto booth, lantai kaca, sound system.</li>
+            <li><strong>Prasmanan & kelengkapan makan:</strong> alat prasmanan 7 set, piring, sendok, garpu.</li>
+            <li><strong>Make up & baju:</strong> MUA + 2 gaun pengantin + gaun khatam, baju ibu/bapak hajat, baju ibu/bapa besan.</li>
+            <li><strong>Undangan & lain-lain:</strong> undangan 200 lembar, kotak angpau.</li>
+          </ul>
+        </article>
+
+        <article class="package featured">
+          <span class="tag">PAKET PLATINUM</span>
+          <div class="price">Rp20.000.000</div>
+          <ul>
+            <li><strong>Dekorasi:</strong> tenda pelangi 6x8, tenda perasman 4x6, 4 meja prasmanan, 2 meja tamu, 50 kursi + cover, dekorasi pelaminan 6m, bunga hidup + mix, karpet jalan, gazebo, lantai akrilik, stand flowers, panggung hiburan, sound system.</li>
+            <li><strong>Prasmanan:</strong> alat prasmanan 7 set, chafing dish roll top 3 sheet, piring, sendok garpu.</li>
+            <li><strong>Kertas undangan:</strong> 500 lembar.</li>
+            <li><strong>MC:</strong> adat + sungkeman + sawer.</li>
+            <li><strong>Make up:</strong> MUA + 2 gaun pengantin + 1 gaun khataman, 4 baju pagar ayu, 2 prasmanan, 1 penyambut tamu, ibu CPW/CPP (2 kebaya + beskop).</li>
+            <li><strong>Hiburan:</strong> organ (siang).</li>
+            <li><strong>Catatan:</strong> tanpa MUA + gaun return 1,5 juta; tambah vendor tambah budget; DP minimal 1 juta; DP 50% 2 minggu sebelum hari H; pelunasan di hari H; wedding cancel DP tidak bisa kembali.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Portfolio</div>
+        <h2>Galeri Dekorasi</h2>
+        <p>Lihat contoh dekorasi dan materi paket Gaya Wedding Dekorasi.</p>
+      </div>
+      <div class="gallery">
+        <a href="galeri-1.jpg" target="_blank"><img src="galeri-1.jpg" alt="Galeri dekorasi 1"></a>
+        <a href="galeri-2.jpg" target="_blank"><img src="galeri-2.jpg" alt="Galeri dekorasi 2"></a>
+        <a href="galeri-3.jpg" target="_blank"><img src="galeri-3.jpg" alt="Galeri dekorasi 3"></a>
+        <a href="galeri-4.jpg" target="_blank"><img src="galeri-4.jpg" alt="Galeri dekorasi 4"></a>
+        <a href="galeri-5.jpg" target="_blank"><img src="galeri-5.jpg" alt="Galeri dekorasi 5"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Hubungi Kami</div>
+        <h2>Siap mewujudkan dekorasi impian?</h2>
+        <p>Konsultasikan kebutuhan acara Anda langsung melalui WhatsApp atau Facebook.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Gaya Wedding Dekorasi</h3>
+          <p><strong>WhatsApp / Telepon:</strong> +62 857-2358-1783</p>
+          <p><strong>Alamat:</strong> Cikangkung, Kec. Ciracap, Kabupaten Sukabumi, Jawa Barat 43176</p>
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/6285723581783?text=Halo%20Gaya%20Wedding%20Dekorasi,%20saya%20ingin%20booking." target="_blank">Chat WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>Media Sosial</h3>
+          <p>Ikuti dan lihat karya terbaru kami di Facebook.</p>
+          <div class="socials">
+            <a class="btn secondary" href="https://www.facebook.com/share/1CCq2EGjo2/" target="_blank">Facebook 1</a>
+            <a class="btn secondary" href="https://www.facebook.com/share/1FNwbaYNHc/" target="_blank">Facebook 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Gaya Wedding Dekorasi • Cikangkung, Ciracap, Sukabumi
+</footer>
+</body>
+</html>
